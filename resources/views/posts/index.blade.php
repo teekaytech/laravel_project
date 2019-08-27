@@ -15,9 +15,9 @@
             <div class="col-md-12">
                 <small class="post-date">
                     Posted on: {{ $post->created_at }}
-
+                    in <b>{{ $post->category['name'] }}</b> Category.
                 </small>
-                {{ str_limit($post->body, 450) }}
+                {{ str_limit($post->body, 450) }}<br><br>
                 <p><a class="btn btn-primary" href="/posts/{{ $post->id }}">Read more</a></p>
             </div>
         </div><br>

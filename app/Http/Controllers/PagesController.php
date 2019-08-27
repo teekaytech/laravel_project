@@ -10,9 +10,9 @@ class PagesController extends Controller
         return view('pages/welcome');
     }
 
-    public function categories() {
-        return view('pages/categories');
-    }
+//    public function categories() {
+//        return view('pages/categories');
+//    }
 
     public function aboutus() {
         return view("pages/aboutus");

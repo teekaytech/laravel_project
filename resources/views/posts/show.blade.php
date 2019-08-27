@@ -3,7 +3,9 @@
 @section('title','lBlog | View Post')
 
 @section('content')
-    <small class="post-date"> Posted on: {{ $post->created_at }} </small>
+    <small class="post-date">
+        Posted on: {{ $post->created_at }} in <b>{{ $post->category['name'] }}</b> Category.
+    </small>
     <div class="row">
         <div class="col-md-12">
             <h1>{{ $post->title }}</h1>

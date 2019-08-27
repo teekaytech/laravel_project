@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use App\Post;
 use Illuminate\Http\Request;
 use function Sodium\compare;
@@ -26,7 +27,8 @@ class PostsController extends Controller
      */
     public function create()
     {
-        return view("posts.create");
+        $categories = Category::all();
+        return view("posts.create", compact('categories'));
     }
 
     /**
@@ -39,7 +41,8 @@ class PostsController extends Controller
     {
         $request = request()->validate([
             'title' => ['required','min:3'],
-            'body' => ['required', 'min:3']
+            'body' => ['required', 'min:3'],
+            'category_id' => ['required']
     ]);
         Post::create($request);
         return redirect('/posts');

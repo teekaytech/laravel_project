@@ -22,7 +22,7 @@
 
 
 Route::resource('posts','PostsController');
+Route::resource('categories','CategoriesController');
 
 Route::get('/', 'PagesController@home');
-Route::get('/categories', 'PagesController@categories');
 Route::get('/aboutus', 'PagesController@aboutus');

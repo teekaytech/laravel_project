@@ -13,9 +13,20 @@
         </div>
         <div class="form-group">
             <label>Body</label>
-            <textarea id="editor1" class="form-control" name="body" placeholder="Add body here">{!! old('body') !!}
+            <textarea class="form-control" name="body" placeholder="Add body here">{!! old('body') !!}
             </textarea>
         </div>
+
+        <div class="form-group">
+            <label>Category</label>
+            <select class="form-control" name="category_id">
+                <option value="">Select</option>
+                @foreach( $categories as $category)
+                    <option value="{{ $category->id }}"> {{ $category->name }} </option>
+                @endforeach
+            </select>
+        </div>
+
         <button type="submit" class="btn btn-primary">Submit</button>
     </form><br>
     @if($errors->any())
