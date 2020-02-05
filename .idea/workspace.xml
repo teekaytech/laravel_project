@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ebdc76dc-9a49-4be3-aaad-23c158926630" name="Default Changelist" comment="1. Included Categories functionality (Posts are categorized)&#10;2. Did a little on eloquent relationship">
-      <change afterPath="$PROJECT_DIR$/resources/views/categories/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/categories/show.blade.php" afterDir="false" />
+    <list default="true" id="ebdc76dc-9a49-4be3-aaad-23c158926630" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-3.4.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/categories/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/errors.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_26_145027_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_26_145027_create_categories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/categories/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/posts/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/posts/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,6 +30,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -124,7 +126,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../feghas_schlplus" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -137,6 +139,9 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\laravel_engine\firstApp\public\js" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\laravel_engine\firstApp\resources\views\pages" />
       <recent name="C:\wamp64\www\laravel_engine\firstApp\resources\views\posts" />
@@ -177,8 +182,26 @@
       <workItem from="1566744890853" duration="6662000" />
       <workItem from="1566809565418" duration="20925000" />
       <workItem from="1566836225154" duration="109000" />
-      <workItem from="1566864763343" duration="5633000" />
+      <workItem from="1566864763343" duration="5878000" />
+      <workItem from="1566894375381" duration="2853000" />
+      <workItem from="1566981793476" duration="73000" />
+      <workItem from="1566982753940" duration="358000" />
+      <workItem from="1566983346265" duration="5439000" />
+      <workItem from="1567033989162" duration="631000" />
+      <workItem from="1567072688308" duration="2705000" />
+      <workItem from="1567416014318" duration="130000" />
+      <workItem from="1568035961328" duration="1457000" />
+      <workItem from="1569512548682" duration="615000" />
+      <workItem from="1580200803800" duration="16327000" />
     </task>
+    <task id="LOCAL-00001" summary="1. Included Categories functionality (Posts are categorized)&#10;2. Did a little on eloquent relationship">
+      <created>1566870472681</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1566870472681</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -11,4 +11,12 @@ class Category extends Model
     public function posts() {
         return $this->hasMany(Post::class);
     }
+
+    public function getCategories() {
+        return $this::all();
+    }
+
+    public function createCategories($request) {
+        return $this::create($request);
+    }
 }

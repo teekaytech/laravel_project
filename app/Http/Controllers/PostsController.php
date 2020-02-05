@@ -25,9 +25,9 @@ class PostsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Category $category)
     {
-        $categories = Category::all();
+        $categories = $category->getCategories();
         return view("posts.create", compact('categories'));
     }
 
@@ -37,14 +37,14 @@ class PostsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Post $post)
     {
         $request = request()->validate([
             'title' => ['required','min:3'],
             'body' => ['required', 'min:3'],
             'category_id' => ['required']
     ]);
-        Post::create($request);
+        $post->createPost($request);
         return redirect('/posts');
     }
 
@@ -79,7 +79,8 @@ class PostsController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        $post->update(request(['title', 'body']));
+        $request = request(['title', 'body']);
+        $post->updatePost($request);
         return redirect('/posts');
     }
 
@@ -91,7 +92,7 @@ class PostsController extends Controller
      */
     public function destroy(Post $post)
     {
-        $post->delete();
-        return redirect('/posts');
+        $post->deletePost();
+        return redirect('posts');
     }
 }

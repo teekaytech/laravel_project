@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Category;
+use App\Post;
 use Illuminate\Http\Request;
 
 class CategoriesController extends Controller
@@ -12,9 +13,9 @@ class CategoriesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Category $category)
     {
-        $categories = Category::all();
+        $categories = $category->getCategories();
         return view('categories.index', compact('categories'));
     }
 
@@ -25,7 +26,7 @@ class CategoriesController extends Controller
      */
     public function create()
     {
-        //
+        return view('categories.create');
     }
 
     /**
@@ -34,9 +35,11 @@ class CategoriesController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Category $category)
     {
-        //
+        $request = request()->validate(['name' => ['required', 'min:5']]);
+        $category->createCategories($request);
+        return redirect('categories');
     }
 
     /**
@@ -82,5 +85,10 @@ class CategoriesController extends Controller
     public function destroy(Category $category)
     {
         //
+    }
+
+    public function fetchPosts($id) {
+        $posts = Post::where('category_id', $id)->get(['id','title','body']);
+        return json_encode($posts);
     }
 }

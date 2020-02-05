@@ -26,3 +26,5 @@ Route::resource('categories','CategoriesController');
 
 Route::get('/', 'PagesController@home');
 Route::get('/aboutus', 'PagesController@aboutus');
+
+Route::get('/categories/posts/{id}', 'CategoriesController@fetchPosts')->name('category_posts');

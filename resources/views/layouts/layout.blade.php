@@ -6,7 +6,7 @@
     <title>@yield('title','lBlog')</title>
     <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}" />
-
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -32,6 +32,7 @@
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <a class="nav-link" href="/posts/create">Create Post</a>
+            <a class="nav-link" href="/categories/create">Create Category</a>
             <input class="form-control mr-sm-2" type="text" placeholder="Search">
             <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
         </form>

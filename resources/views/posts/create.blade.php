@@ -29,13 +29,8 @@
 
         <button type="submit" class="btn btn-primary">Submit</button>
     </form><br>
-    @if($errors->any())
-        @foreach( $errors->all() as $error)
-        <div class="alert alert-dismissible alert-danger">
-            {{ $error }}
-        </div>
-        @endforeach
-    @endif
+
+    @include('errors')
 
 @endsection
 
