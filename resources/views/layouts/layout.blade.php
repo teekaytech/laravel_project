@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title','lBlog')</title>
-    <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" />
-    <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}" />
+    <link rel="stylesheet" href="{{ URL::secure_asset('css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ URL::secure_asset('css/style.css') }}" />
     <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
 </head>
 <body>
