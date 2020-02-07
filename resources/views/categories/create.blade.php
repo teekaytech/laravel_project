@@ -3,7 +3,7 @@
 
 @section('content')
     <div class="row">
-        <h1>Create Post</h1>
+        <h1>Create Category</h1>
     </div><br><hr>
     <form method="POST" action="/categories">
         {{ csrf_field() }}
